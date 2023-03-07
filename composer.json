@@ -3,5 +3,8 @@
         "psr-4": {
             "Estrutura_site\\Mvc\\": "src/"
         }
+    },
+    "require": {
+        "psr/http-server-handler": "^1.0"
     }
 }
