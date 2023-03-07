@@ -1,11 +1,17 @@
 <?php
 namespace Estrutura_site\Mvc\Controllers;
 
+use Estrutura_site\Mvc\Helper\FlashMessageTrait;
+use Estrutura_site\Mvc\Helper\HtmlRendererTrait;
+
 class homeController implements Controller{
+
+    use FlashMessageTrait;
+    use HtmlRendererTrait;
+
     public function processar():void
     {
-        $titulo = 'Home';
-        $content = phpinfo();
-        require_once __DIR__ . '/../../views/home/index.php';
+        $this->addSuccessMessage('Bem Vindo!');
+        echo $this->renderTemplate('home\index',['titulo'=>'Home','content'=>'Hum....']);
     }
 }
