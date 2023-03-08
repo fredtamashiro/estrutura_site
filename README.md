@@ -8,3 +8,4 @@ PSRs utilizados:
 - **PSR 7** : HTTP Message Interfaces
 - **PSR-15** : HTTP Server Request Handlers 
 - **PSR 17** : HTTP Factories
+- **PSR-11** : Container interface with PHP-DI
