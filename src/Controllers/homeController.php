@@ -3,15 +3,20 @@ namespace Estrutura_site\Mvc\Controllers;
 
 use Estrutura_site\Mvc\Helper\FlashMessageTrait;
 use Estrutura_site\Mvc\Helper\HtmlRendererTrait;
+use Nyholm\Psr7\Response;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Server\RequestHandlerInterface;
 
-class homeController implements Controller{
+class homeController implements RequestHandlerInterface{
 
     use FlashMessageTrait;
     use HtmlRendererTrait;
 
-    public function processar():void
+    public function handle(ServerRequestInterface $request): ResponseInterface
     {
+        $queryParams = $request->getQueryParams();
         $this->addSuccessMessage('Bem Vindo!');
-        echo $this->renderTemplate('home\index',['titulo'=>'Home','content'=>'Hum....']);
+        return new Response(200,[],$this->renderTemplate('home\index',['titulo'=>'Home','content'=>'Hum....']));
     }
 }

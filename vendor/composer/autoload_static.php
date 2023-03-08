@@ -12,6 +12,15 @@ class ComposerStaticInitcb4e9828f0c37754df55ffb5834e7722
             'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
         ),
+        'N' => 
+        array (
+            'Nyholm\\Psr7\\' => 12,
+            'Nyholm\\Psr7Server\\' => 18,
+        ),
+        'H' => 
+        array (
+            'Http\\Message\\' => 13,
+        ),
         'E' => 
         array (
             'Estrutura_site\\Mvc\\' => 19,
@@ -25,7 +34,20 @@ class ComposerStaticInitcb4e9828f0c37754df55ffb5834e7722
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Nyholm\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nyholm/psr7/src',
+        ),
+        'Nyholm\\Psr7Server\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nyholm/psr7-server/src',
+        ),
+        'Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/message-factory/src',
         ),
         'Estrutura_site\\Mvc\\' => 
         array (
