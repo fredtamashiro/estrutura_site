@@ -6,5 +6,6 @@ Estrutura do site em PHP seguindo o padrão MVC e principios de SOLID.
 PSRs utilizados:
 - **PSR 4** : Autoloader
 - **PSR 7** : HTTP Message Interfaces
+- **PSR-11** : Container interface with PHP-DI
 - **PSR-15** : HTTP Server Request Handlers 
 - **PSR 17** : HTTP Factories
