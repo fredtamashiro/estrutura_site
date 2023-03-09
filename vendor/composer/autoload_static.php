@@ -6,16 +6,29 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitcb4e9828f0c37754df55ffb5834e7722
 {
+    public static $files = array (
+        'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'P' => 
         array (
             'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
+            'Psr\\Container\\' => 14,
         ),
         'N' => 
         array (
             'Nyholm\\Psr7\\' => 12,
             'Nyholm\\Psr7Server\\' => 18,
+        ),
+        'L' => 
+        array (
+            'Laravel\\SerializableClosure\\' => 28,
+        ),
+        'I' => 
+        array (
+            'Invoker\\' => 8,
         ),
         'H' => 
         array (
@@ -24,6 +37,10 @@ class ComposerStaticInitcb4e9828f0c37754df55ffb5834e7722
         'E' => 
         array (
             'Estrutura_site\\Mvc\\' => 19,
+        ),
+        'D' => 
+        array (
+            'DI\\' => 3,
         ),
     );
 
@@ -37,6 +54,10 @@ class ComposerStaticInitcb4e9828f0c37754df55ffb5834e7722
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
             1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
         'Nyholm\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/nyholm/psr7/src',
@@ -45,6 +66,14 @@ class ComposerStaticInitcb4e9828f0c37754df55ffb5834e7722
         array (
             0 => __DIR__ . '/..' . '/nyholm/psr7-server/src',
         ),
+        'Laravel\\SerializableClosure\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/serializable-closure/src',
+        ),
+        'Invoker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/invoker/src',
+        ),
         'Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-http/message-factory/src',
@@ -52,6 +81,10 @@ class ComposerStaticInitcb4e9828f0c37754df55ffb5834e7722
         'Estrutura_site\\Mvc\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'DI\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/php-di/src',
         ),
     );
 

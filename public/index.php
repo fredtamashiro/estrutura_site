@@ -6,9 +6,14 @@ $pagina = $_SERVER['PATH_INFO'] ?? '/home';
 $metodo = $_SERVER['REQUEST_METHOD'];
 
 $routes = require_once __DIR__."/../config/routes.php";
+
+/** @var PSR\Container\ContainerInterface $diContainer */
+$diContainer = require_once __DIR__."/../config/dependencies.php";
+
+
 $controllerClass = $routes["$metodo|$pagina"] ?? Estrutura_site\Mvc\Controllers\homeController::class;
 
-$controller = new $controllerClass;
+$controller = $diContainer->get($controllerClass);
 
 
 $psr17Factory = new \Nyholm\Psr7\Factory\Psr17Factory();
